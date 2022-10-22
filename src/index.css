@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: auto;
+    min-height: 100vh;
+    background: grey;
+}
+
+.App {
+    background: white;
+    max-width: 550px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.hero {
+    background: #f55a5a;
+    width: 550px;
+    height: 55px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero--title {
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    margin-left: 1em;
+
+    color: #ffffff;
+}
+
+.card {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: max-content;
+    
+    grid-template:
+        "image location"
+        "image title"
+        "image dates"
+        "image desc";
+
+    grid-gap: 0em 2em;
+    margin-top: 2em;
+    margin-left: 0.5em;
+
+}
+
+.card--image {
+    width: 155px;
+    height: 268px;
+    border-radius: 5px;
+    object-fit: cover;
+    grid-area: image;
+}
+
+.card--sec__location {
+    display: flex;
+    align-items: baseline;
+    padding-top: 1em;
+}
+
+.card--sec__location > p {
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+.card--sec__location {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    color: #2b283a;
+    grid-area: location;
+}
+
+.card--sec__title {
+    grid-area: title;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    grid-area: title;
+    color: #2b283a;
+}
+
+.card--sec__dates {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    grid-area: dates;
+    color: #2b283a;
+}
+
+.card--sec__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    grid-area: desc;
+    color: #2b283a;
+
+   
+}
+

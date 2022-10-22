@@ -1,0 +1,1 @@
+Solo POC using REACT/PROPS/ 
